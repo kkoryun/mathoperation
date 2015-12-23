@@ -60,8 +60,11 @@ public:
 	void Setvalue(string s, double d) {
 		valuetable.Add(s, d);
 	}
-	rpn Getrpn() {
-		return _rpn;
+	string* Getrpn() {
+		return _rpn.Getrpn();
+	}
+	int Getrpnsize() {
+		return _rpn.Getsize();
 	}
 	};
 
